@@ -9,9 +9,22 @@
       type="text/javascript"
       src="https://public.tableau.com/javascripts/api/tableau-2.min.js"
     ></script>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <h1>Hello from Back to School 🥳😀</h1>
+    <div>
+      <button id="pdfButton">Get PDF</button>
+      <button id="PPTButton">Get PPT</button>
+      <button id="swapviz">Swap Viz</button>
+    </div>
+
+    <div class="rangeFilter">
+      <input type="number" placeholder="min value" id="minValue" />
+      <input type="number" placeholder="max value" id="maxValue" />
+      <button id="filterButton">Filter!</button>
+    </div>
+
     <!-- id is unique for each page -->
     <div id="vizContainer"></div>
 

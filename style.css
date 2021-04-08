@@ -1,0 +1,18 @@
+h1 {
+  color: darkblue;
+}
+
+button {
+  padding: 10px;
+}
+button:hover {
+  background-color: lightblue;
+}
+
+#pdfButton {
+  background-color: ghostwhite;
+}
+
+#PPTButton {
+  background-color: gold;
+}
