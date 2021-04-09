@@ -1,18 +1,53 @@
+/* Sets all h1 headers to Blue
 h1 {
   color: darkblue;
-}
+}  */
 
+.buttonContainer,
+.rangeFilter {
+  margin-bottom: 20px;
+}
 button {
-  padding: 10px;
+  font-size: larger;
+  background-color: darkblue;
+  color: white;
+  border: none;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 15px;
 }
 button:hover {
   background-color: lightblue;
+  color: black;
 }
 
-#pdfButton {
-  background-color: ghostwhite;
+body {
+  --background-color: #fff9f5;
+  --text-color: black;
+  --transition-delay: 1s;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: var(--transition-delay);
 }
+
+body.dark {
+  --background-color: rgb(53, 52, 52);
+  --text-color: #fff9f5;
+}
+
+/* 
+#pdfButton {
+  background-color: ghostwhite;}
 
 #PPTButton {
-  background-color: gold;
-}
+  background-color: gold;}
+  */

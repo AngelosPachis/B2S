@@ -9,23 +9,36 @@
       type="text/javascript"
       src="https://public.tableau.com/javascripts/api/tableau-2.min.js"
     ></script>
+    <!-- This links the html to the .css file -->
     <link rel="stylesheet" href="./style.css" />
   </head>
+
+  <!-- Replace the following with comment to see if dark mode is working -->
+  <!--<body class="dark"> -->
   <body>
-    <h1>Hello from Back to School 🥳😀</h1>
-    <div>
+    <h1>Hello from Back to School 2 | DS18 🏫</h1>
+
+    <h2>Embedded Analytics with Andre!</h2>
+
+    <div class="buttonContainer">
       <button id="pdfButton">Get PDF</button>
       <button id="PPTButton">Get PPT</button>
       <button id="swapviz">Swap Viz</button>
+      <button class="backgroundToggleButton" onclick="toggle();">
+        Change Mode
+      </button>
     </div>
 
     <div class="rangeFilter">
-      <input type="number" placeholder="min value" id="minValue" />
-      <input type="number" placeholder="max value" id="maxValue" />
-      <button id="filterButton">Filter!</button>
+      <input type="number" disabled placeholder="min value" id="minValue" />
+      <input type="number" disabled placeholder="max value" id="maxValue" />
+      <button disabled id="filterButton">Filter!</button>
     </div>
 
     <!-- id is unique for each page -->
+    <!-- use a class because that doesn't have to be unique -->
+
+    <!-- Div element in the page body where you insert the Tableau visualization-->
     <div id="vizContainer"></div>
 
     <script src="./app.js"></script>
